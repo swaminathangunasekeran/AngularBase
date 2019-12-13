@@ -5,10 +5,11 @@ import { PagesComponent } from './pages.component';
 import {HomeComponent} from "./home/home.component";
 import {PagesRoutingModule} from "./pages-routing.module";
 
+
 @NgModule({
   declarations: [
     PagesComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     PagesRoutingModule,

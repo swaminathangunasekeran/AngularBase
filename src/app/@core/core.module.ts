@@ -1,9 +1,11 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {AuthServiceService} from "./auth-service.service";
+import {AuthService} from "./auth-service.service";
+import {AuthGuardService} from "./auth-guard.service";
 
 const SERVICES =[
-  AuthServiceService
+  AuthService,
+  AuthGuardService
 ]
 
 
