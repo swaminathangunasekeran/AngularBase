@@ -2,12 +2,16 @@ import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core
 import { CommonModule } from '@angular/common';
 import {AuthService} from "./auth-service.service";
 import {AuthGuardService} from "./auth-guard.service";
+import {AuthData} from "./data/auth";
 
 const SERVICES =[
   AuthService,
   AuthGuardService
 ]
 
+const DATA_SERVICES = [
+  { provide: AuthData, useClass: AuthService },
+]
 
 @NgModule({
   declarations: [],
@@ -30,7 +34,8 @@ export class CoreModule {
     return <ModuleWithProviders>{
       ngModule: CoreModule,
       providers: [
-        ... SERVICES
+        ... SERVICES,
+        ... DATA_SERVICES
       ]
     }
   }

@@ -5,7 +5,7 @@
     "paths": {
       "@env": ["environments/environment"],
       "@shared/*": ["app/shared/*"],
-      "@core/*": ["app/core/*"]
+      "@core/*": ["src/app/core/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -22,7 +22,7 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

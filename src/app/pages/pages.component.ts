@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthData} from "../core/data/auth";
 
 @Component({
   selector: 'app-pages',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService:AuthData) { }
 
   ngOnInit() {
-    console.log("ON INIT PagesComponent");
+    console.log("ON INIT PagesComponent", this.authService.isAuthenticated());
+   
   }
 
 }
