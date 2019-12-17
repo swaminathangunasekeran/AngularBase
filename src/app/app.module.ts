@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import {NotFoundComponent} from "./not-found/not-found.component"
 
 //import {ShareModule} from "./@share/share.module";
-import {CoreModule} from "./core/core.module";
+import {CoreModule} from "@core/core.module";
 // import {PagesModule} from "./pages/pages.module"
+import {environment} from "@env";
+
 
 @NgModule({
   declarations: [

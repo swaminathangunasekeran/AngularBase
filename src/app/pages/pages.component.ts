@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthData} from "../core/data/auth";
+import {AuthData,User} from "@core/data/auth";
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pages',
@@ -12,7 +13,7 @@ export class PagesComponent implements OnInit {
 
   ngOnInit() {
     console.log("ON INIT PagesComponent", this.authService.isAuthenticated());
-   
+ 
   }
 
 }
